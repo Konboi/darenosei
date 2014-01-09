@@ -1,0 +1,6 @@
+<h1>今のその気持は誰のせい？</h1>
+
+<%= form_tag('/degree', :method => :post) do %>
+  <%= text_field :who, :name %>
+  <%= submit_tag("のせい") %>
+<% end %>

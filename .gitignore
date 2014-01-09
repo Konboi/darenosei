@@ -20,3 +20,4 @@ vendor/bundle
 tmp
 coverage
 config/database.yml
+public/uploads/image

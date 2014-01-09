@@ -1,0 +1,11 @@
+<h1>どのくらい？</h1>
+
+<%= form_tag("/generate") do %>
+  <%= radio_button_tag 'degree', 'ぜんぶ' %> ぜんぶ <br>
+  <%= radio_button_tag 'degree', 'ほどほど' %> ほどほど <br>
+  <%= radio_button_tag 'degree', 'だいたい' %> だいたい <br>
+  <%= radio_button_tag 'degree', 'まぁまぁ' %> まぁまぁ <br>
+  <%= radio_button_tag 'degree', 'すこし' %> すこし <br>
+
+  <%= submit_tag("送信") %>
+<% end %>
