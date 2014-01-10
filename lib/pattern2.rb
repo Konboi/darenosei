@@ -1,9 +1,9 @@
-class Pattern1
+class Pattern2
   def initialize
     @image = Magick::Image.new(1680, 1050) {
       self.background_color = "none"
     }
-    frame = Magick::ImageList.new("#{Rails.root}/data/image/yuki_01_b.jpg")
+    frame = Magick::ImageList.new("#{Rails.root}/data/image/yuki_02_b.jpg")
     @image = @image.composite(frame, 0, 0, Magick::OverCompositeOp)
   end
 
@@ -44,7 +44,6 @@ class Pattern1
       x = x - 100
       y = y - 200
     end
-
 
     last_ward = "のせいだ"
     last_ward_array = last_ward.split(//)

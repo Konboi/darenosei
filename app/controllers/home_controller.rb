@@ -11,5 +11,8 @@ class HomeController < ApplicationController
     image = ImageGenerator.new
     image.write(session["who"], params[:degree])
     @path = image.save
+    @image = Image.create(
+      path: @path
+    )
   end
 end

@@ -2,6 +2,7 @@ class ImageGenerator
   def initialize
     generate_image = [
       Pattern1.new,
+      Pattern2.new
     ]
     @image = generate_image.sample
   end
