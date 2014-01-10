@@ -40,7 +40,7 @@ class Pattern1
       y = y + 90
     end
 
-    if total_length > 10 && who.length > 5
+    if total_length > 10 && who.length >= 5
       x = x - 100
       y = y - 200
     end

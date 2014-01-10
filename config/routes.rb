@@ -2,6 +2,7 @@ Darenosei::Application.routes.draw do
   root "home#index"
   post "/degree" => "home#degree"
   post "/generate" => "home#generate"
+  get  "/image/:id" => "home#show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -15,4 +15,9 @@ class HomeController < ApplicationController
       path: @path
     )
   end
+
+  def show
+    @image = Image.where(id: params[:id]).first
+    redirect_to root_path unless @image
+  end
 end
